@@ -96,7 +96,7 @@
       display: grid;
       grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
       gap: 24px;
-      align-items: center;
+      align-items: start;
     }
     .hero h1 {
       font-size: 2.1rem;
@@ -176,13 +176,12 @@
     .hero-card a:hover img { transform: scale(1.01); }
     .hero-card img {
       width: 100%;
+      height: auto;
       border-radius: 12px;
       margin-bottom: 10px;
       display: block;
       transition: transform 0.12s ease;
-      object-fit: cover;
-      height: 220px;
-      object-position: top;
+      object-fit: contain;
     }
     .badge {
       display: inline-block;
@@ -397,7 +396,8 @@
         <span class="event-badge">Upcoming Event — May 22nd</span>
         <a href="https://abbiesangelsmeatraffle2026.auctria.events" target="_blank" rel="noopener">
           <img src="images/1000023228.jpeg"
-               alt="Elevated Meat Raffle Fundraiser flyer – click for tickets">
+               alt="Elevated Meat Raffle Fundraiser flyer – click for tickets"
+               loading="lazy">
         </a>
         <h2>Elevated Meat Raffle Fundraiser</h2>
         <p><strong>Date:</strong> Friday, May 22, 2026</p>
